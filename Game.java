@@ -1,12 +1,14 @@
 package BlackJack;
 
-class Game {
-  public static void main(String[] args) {}
-
+public class Game {
   Deck deck = new Deck();
   int score = 0;
-}
+  public static void main(String[] args) {
+      System.out.println("hi");
+  }
 
+
+}
 
 // Card
   // type: number,face,ace
