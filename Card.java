@@ -1,12 +1,14 @@
 package BlackJack;
 
+import java.util.*;
+
 public class Card {
   public enum Suit {
     CLUBS,
     DIAMONDS,
     HEARTS,
     SPADES
-  };
+  }
 
   public enum Rank {
     TWO,
@@ -40,6 +42,23 @@ public class Card {
   public Rank getRank() {
     return this.rank;
   }
+
+  public static String getSuits() {
+    StringBuilder sb = new StringBuilder();
+    for (Suit suit : Suit.values()) {
+      sb.append(suit).append(" ");
+    }
+    return sb.toString();
+  }
+
+  public static String getRanks() {
+    StringBuilder sb = new StringBuilder();
+    for (Rank rank : Rank.values()) {
+      sb.append(rank).append("");
+    }
+    return sb.toString();
+  }
+
   // @Override annotation is used to indicate that the declared toString() method is intended to
   // override a method with the same signature in a superclass. In this case, it's overriding the
   // toString() method of the Object class, which is the superclass of all classes in Java.

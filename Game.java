@@ -1,11 +1,17 @@
 package BlackJack;
 
+import BlackJack.Card.*;
+import java.util.*;
+
 public class Game {
-  Deck deck = new Deck();
+  //  Deck deck = new Deck();
   int score = 0;
 
   public static void main(String[] args) {
-    System.out.println("hi");
+    String allSuits = Card.getSuits();
+    Deck deck = new Deck();
+    deck.buildDeck();
+    System.out.println(deck.cards);
   }
 }
 
